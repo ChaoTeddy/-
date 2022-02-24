@@ -1,0 +1,332 @@
+/* 清除預設格式 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 清除完成 */
+.wrap{
+    margin: 0 auto;
+    width: 0 auto;
+}
+
+.barlink{
+    background: #f6f6f6;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+.outlink li{
+    float: right;
+    margin-right: 5px;
+}
+.outlink img{
+    float: left;
+}
+.outlink a{
+    font-size: 16px;
+    float: left;
+    text-decoration: none;
+    padding-right: 10px;
+    margin-left: 3px;
+}
+.outlinkstyle1{
+    color: #00aae7;
+}
+.outlinkstyle2{
+    color: #4460a0;
+    border-right: 1px gray solid;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.headerimg{
+    width: 200px;
+    height: 50px;
+    background-image: url(../img/headlogo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 4px;
+    display: block;
+    /* 利用首排縮排功能推擠出背景圖空間，並設置為不換行 */
+    text-indent: 101%;
+    white-space: nowrap;
+    /* 將推擠出的文字連結隱藏 */
+    overflow: hidden;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    /* padding 上下 左右 */
+    padding:10px 25px;
+    text-decoration: none;
+    color: #00cc99;
+}
+.menu a:hover{
+    color: blue;
+    border-bottom: 3px solid #00cc99;
+}
+.menu a:active{
+    color: red;
+}
+.content{
+    width: 1024px;
+    margin: 0 auto;
+}
+.imgbox{
+    position: relative;
+    width: 1024px;
+    height: 346px;
+}
+.imgbox h1{
+    position: absolute;
+    top: 95px;
+    width: 982px;
+    color: white;
+    font-size: 35px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+    line-height: 45px;
+    /* padding簡寫 上右下左 */
+    padding: 40px 0px 40px 20px;
+    background:rgba(100, 100, 100, 0.1);
+}
+
+
+.projectbox{
+    display: flex;
+    justify-content: center;
+}
+.html5,.bootstrap,.jquery{
+    border-radius:5px;
+    box-shadow: 0px 2px 2px 1px rgb(231, 229, 229);
+    text-align: center;
+    width: 260px;
+    /* padding簡寫 上右下左 */
+    padding: 0px 20px 20px 20px;
+    /* margin簡寫 上右下左 */
+    margin: 60px 20px 0px 20px;
+}
+.html5 h2,.bootstrap h2,.jquery h2{
+    /* margin縮寫 上下 左右 */
+    margin: 5px 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.html5 p,.bootstrap p,.jquery p{
+    text-align: left;
+    font-size: 15px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+    line-height:25px;
+}
+/* bootstrap */
+.bootstrap{
+    padding-top: 30px;
+}
+.bootstrap h2{
+    margin-top: 26px;
+}
+/* jquery */
+.jquery{
+    padding-top: 15px;
+    margin-top: 60px;
+}
+.jquery h2{
+    margin-top: 12px;
+}
+.jquery ul{
+    font-size: 15px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+    line-height:20px;
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+/* table */
+.coursetable h2{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "微軟正黑體";
+    /* margin縮寫 上右下左 */
+    margin: 60px 0px 30px 0px;
+}
+.coursetable table{
+    margin:0 auto;
+}
+.coursetable table th,.coursetable table td{
+    /* padding縮寫 上右下左 */
+    padding: 10px 100px 10px 0px;
+    font-family: "微軟正黑體";
+}
+.coursetable table th{
+    font-size: 20px;
+    border-top: 1px rgb(212, 202, 202) solid;
+    background: #f7f7f7;
+    font-weight: bold;
+}
+.coursetable table td{
+    font-size: 16px;
+    border-top: 1px rgb(212, 202, 202) solid;
+    border-bottom: 1px rgb(212, 202, 202) solid;
+}
+.focus{
+    color: #00cc99;
+}
+
+
+/* data */
+.data{
+    background: #00684a;
+    padding-top: 20px;
+    margin-top: 60px;
+}
+.data h2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 23px;
+    font-family: "微軟正黑體";
+    color: white;
+    font-weight: bold;
+}
+.data form{
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dataneme,.dataemail,.datatext{
+    width: 430px;
+    height: 20px;
+    border:none;
+    border-radius: 3px;
+    /* margin 上右下左 */
+    margin: 5px 0px 20px 0px;
+    /* padding 上右下左 */
+    padding: 2px 10px 3px 10px;
+    font-family: "微軟正黑體";
+    outline: none;
+
+}
+.input label{
+    font-size: 15px;
+    color: white;
+    font-family: "微軟正黑體";
+}
+.datasubmit{
+    border: none;
+    border-radius: 3px;
+    /* padding 上下 左右 */
+    padding: 5px 0px;
+    width: 65px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background: #00cc99;
+    color: white;
+    cursor: pointer;
+}
+::placeholder{
+    color: gray;
+    font-size: 14px;
+    font-family: "微軟正黑體";
+}
+.data textarea{
+    width: 400px;
+    font-family: "微軟正黑體";
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+/* footer */
+.footer{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding 上下 左右 */
+    padding: 0px 10px;
+}
+.footer ul{
+    font-weight: bold;
+    font-family: "微軟正黑體";
+    font-size: 15px;
+}
+.footerimg{
+    width: 200px;
+    height: 50px;
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: 4px;
+    display: block;
+    /* 利用首排縮排功能推擠出背景圖空間，並設置為不換行 */
+    text-indent: 101%;
+    white-space: nowrap;
+    /* 將推擠出的文字連結隱藏 */
+    overflow: hidden;
+}
+.footer li a{
+    text-decoration: none;
+    color: #e33b88;
+}
+/* 新增hover樣式 */
+.outlink a:hover{
+    color: red;
+}
+.dataneme:hover,.dataemail:hover,.datatext:hover,.data textarea:hover{
+    border: 1px black solid;
+}
